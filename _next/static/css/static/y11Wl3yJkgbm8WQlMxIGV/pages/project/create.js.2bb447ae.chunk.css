@@ -1,0 +1,539 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.ant-tag {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  display: inline-block;
+  height: auto;
+  margin-right: 8px;
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  background: #fafafa;
+  border: 1px solid #E5E3E3;
+  border-radius: 2px;
+  cursor: default;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+.ant-tag:hover {
+  opacity: 0.85;
+}
+.ant-tag,
+.ant-tag a,
+.ant-tag a:hover {
+  color: #333333;
+}
+.ant-tag > a:first-child:last-child {
+  display: inline-block;
+  margin: 0 -8px;
+  padding: 0 8px;
+}
+.ant-tag .anticon-close {
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 3px;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+.ant-tag .anticon-close:hover {
+  color: #333;
+}
+.ant-tag-has-color {
+  border-color: transparent;
+}
+.ant-tag-has-color,
+.ant-tag-has-color a,
+.ant-tag-has-color a:hover,
+.ant-tag-has-color .anticon-close,
+.ant-tag-has-color .anticon-close:hover {
+  color: #fff;
+}
+.ant-tag-checkable {
+  background-color: transparent;
+  border-color: transparent;
+}
+.ant-tag-checkable:not(.ant-tag-checkable-checked):hover {
+  color: #6686EC;
+}
+.ant-tag-checkable:active,
+.ant-tag-checkable-checked {
+  color: #fff;
+}
+.ant-tag-checkable-checked {
+  background-color: #6686EC;
+}
+.ant-tag-checkable:active {
+  background-color: #4c64c7;
+}
+.ant-tag-hidden {
+  display: none;
+}
+.ant-tag-pink {
+  color: #eb2f96;
+  background: #fff0f6;
+  border-color: #ffadd2;
+}
+.ant-tag-pink-inverse {
+  color: #fff;
+  background: #eb2f96;
+  border-color: #eb2f96;
+}
+.ant-tag-magenta {
+  color: #eb2f96;
+  background: #fff0f6;
+  border-color: #ffadd2;
+}
+.ant-tag-magenta-inverse {
+  color: #fff;
+  background: #eb2f96;
+  border-color: #eb2f96;
+}
+.ant-tag-red {
+  color: #f5222d;
+  background: #fff1f0;
+  border-color: #ffa39e;
+}
+.ant-tag-red-inverse {
+  color: #fff;
+  background: #f5222d;
+  border-color: #f5222d;
+}
+.ant-tag-volcano {
+  color: #fa541c;
+  background: #fff2e8;
+  border-color: #ffbb96;
+}
+.ant-tag-volcano-inverse {
+  color: #fff;
+  background: #fa541c;
+  border-color: #fa541c;
+}
+.ant-tag-orange {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+.ant-tag-orange-inverse {
+  color: #fff;
+  background: #fa8c16;
+  border-color: #fa8c16;
+}
+.ant-tag-yellow {
+  color: #fadb14;
+  background: #feffe6;
+  border-color: #fffb8f;
+}
+.ant-tag-yellow-inverse {
+  color: #fff;
+  background: #fadb14;
+  border-color: #fadb14;
+}
+.ant-tag-gold {
+  color: #faad14;
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+.ant-tag-gold-inverse {
+  color: #fff;
+  background: #faad14;
+  border-color: #faad14;
+}
+.ant-tag-cyan {
+  color: #13c2c2;
+  background: #e6fffb;
+  border-color: #87e8de;
+}
+.ant-tag-cyan-inverse {
+  color: #fff;
+  background: #13c2c2;
+  border-color: #13c2c2;
+}
+.ant-tag-lime {
+  color: #a0d911;
+  background: #fcffe6;
+  border-color: #eaff8f;
+}
+.ant-tag-lime-inverse {
+  color: #fff;
+  background: #a0d911;
+  border-color: #a0d911;
+}
+.ant-tag-green {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+.ant-tag-green-inverse {
+  color: #fff;
+  background: #52c41a;
+  border-color: #52c41a;
+}
+.ant-tag-blue {
+  color: #1890ff;
+  background: #e6f7ff;
+  border-color: #91d5ff;
+}
+.ant-tag-blue-inverse {
+  color: #fff;
+  background: #1890ff;
+  border-color: #1890ff;
+}
+.ant-tag-geekblue {
+  color: #2f54eb;
+  background: #f0f5ff;
+  border-color: #adc6ff;
+}
+.ant-tag-geekblue-inverse {
+  color: #fff;
+  background: #2f54eb;
+  border-color: #2f54eb;
+}
+.ant-tag-purple {
+  color: #722ed1;
+  background: #f9f0ff;
+  border-color: #d3adf7;
+}
+.ant-tag-purple-inverse {
+  color: #fff;
+  background: #722ed1;
+  border-color: #722ed1;
+}
+.ant-tag-success {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+.ant-tag-processing {
+  color: #1890ff;
+  background: #e6f7ff;
+  border-color: #91d5ff;
+}
+.ant-tag-error {
+  color: #f5222d;
+  background: #fff1f0;
+  border-color: #ffa39e;
+}
+.ant-tag-warning {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+.ant-tag > .anticon + span,
+.ant-tag > span + .anticon {
+  margin-left: 7px;
+}
+.ant-tag-rtl {
+  margin-right: 0;
+  margin-left: 8px;
+  direction: rtl;
+  text-align: right;
+}
+.ant-tag-rtl.ant-tag .anticon-close {
+  margin-right: 3px;
+  margin-left: 0;
+}
+
+/***********************
+模块名：浏览器重置文件
+作者：rexren（任寒韬）
+修改：baronxiong
+************************/
+/*不要重置鼠标样式*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+figure,
+figcaption,
+nav,
+footer,
+menu,
+blockquote {
+  margin: 0;
+  padding: 0;
+  /*cursor:default;*/
+}
+/*改变所有元素的盒模型*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+/*这些标签的font-style是否不要重置？会影响编辑器中的样式*/
+address,
+em,
+i,
+b {
+  font-style: normal;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  font-size: 0;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+:focus,
+button,
+input,
+select,
+textarea {
+  outline: none;
+}
+textarea,
+input,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+textarea,
+input {
+  background: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  resize: none;
+  cursor: text;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+a,
+img {
+  -webkit-user-drag: none;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+body {
+  word-wrap: break-word;
+}
+::-webkit-input-placeholder,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "PingFang SC", "Microsoft YaHei", "sans-serif";
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*滚动条*/
+::-webkit-scrollbar,
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 6px!important;
+  height: 6px!important;
+  background: none;
+}
+::-webkit-resizer,
+body::-webkit-resizer,
+html::-webkit-resizer {
+  background: none !important;
+}
+::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+html::-webkit-scrollbar-corner {
+  background: none;
+}
+::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  border-radius: 6px!important;
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+.we-scrollbar--light::-webkit-scrollbar-thumb,
+body.we-scrollbar--light::-webkit-scrollbar-thumb,
+html.we-scrollbar--light::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.1) !important;
+}
+.we-scrollbar--light::-webkit-scrollbar-thumb:hover,
+body.we-scrollbar--light::-webkit-scrollbar-thumb:hover,
+html.we-scrollbar--light::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(0, 0%, 100%, 0.2) !important;
+}
+/*状态原子类*/
+/*选中、当前*/
+/*下拉菜单选中*/
+/*显示*/
+/*隐藏*/
+/*展开*/
+/*不可用*/
+/*错误*/
+/*成功*/
+/*警告*/
+/*可点击*/
+/*固定定位*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-main {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  width: 189px;
+}
+.header-logo-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.header-user {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-user-group {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.header-user-group > svg {
+  font-size: 12px;
+  color: #808080;
+  margin-left: 4px;
+}
+.header-user-name {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.header-user-name > svg {
+  font-size: 12px;
+  color: #808080;
+  margin-left: 4px;
+}
+.header-user-avatar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-user-avatar-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.header-nav-aside {
+  min-width: 560px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-nav-aside-group {
+  display: flex;
+  align-items: center;
+}
+.header-nav-aside-group svg {
+  font-size: 12px;
+  color: #808080;
+  margin-right: 4px;
+}
+.header-nav-aside .admin-link {
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+html {
+  background-color: #F5F5F5;
+  min-width: 1200px;
+}
+.admin-app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+.admin-layout {
+  background-color: #F5F5F5;
+}
+.admin-layout-header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 2px, rgba(0, 0, 0, 0.02) 0px 1px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+.admin-layout-footer {
+  background-color: #F5F5F5;
+  color: #808080;
+  font-size: 12px;
+}
+.admin-layout-content {
+  padding: 64px 50px 0;
+  min-height: auto;
+  flex: 1;
+}
+.admin-layout-content--home {
+  padding: 0;
+}
+
