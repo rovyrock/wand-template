@@ -21,6 +21,10 @@ module.exports = withLess({
     modifyVars: themeVariables,
   },
   distDir: 'build',
+  assetPrefix: prod ? '/wand-template' : '',
+    publicRuntimeConfig: {
+      linkPrefix: prod ? '//wand-template' : ''
+    },
   // assetPrefix: isProd ? 'http://10.123.5.151/rebuild/wand-template/' : '',
   webpack: (config, {
     isServer,dev
