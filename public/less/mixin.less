@@ -1,0 +1,54 @@
+// mixins for clearfix
+// ------------------------
+.clearfix() {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// mixins for ellipsis
+// ------------------------
+//单行截断
+.ellipsis(@width: auto) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: @width;
+}
+
+//多行截断
+.ellipsisLine(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line;
+}
+
+// Placeholder text
+.placeholder(@color: rgba(0, 0, 0, 0.2)) {
+
+  // Firefox
+  &::-moz-placeholder {
+    color: @color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+
+  // Safari and Chrome
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+}
