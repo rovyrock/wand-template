@@ -8,7 +8,7 @@ const path = require('path')
 const themeVariables = lessToJS(
   fs.readFileSync(path.resolve(__dirname, './public/less/antd-custom.less'), 'utf8')
 )
-const isProd = process.env.NODE_ENV === 'production'
+const prod = process.env.NODE_ENV === 'production'
 
 module.exports = withLess({
   // cssModules: true,
