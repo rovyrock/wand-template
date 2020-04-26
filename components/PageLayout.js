@@ -7,7 +7,7 @@ import {withRouter} from 'next/router'
 // import { connect } from 'react-redux';
 // import {toggleDispatch} from '../store/redux/pageData-redux'
 // import RouteConf from '../config/route'
-import '../public/less/styles.less'
+import '../assets/less/styles.less'
 
 @withRouter
 

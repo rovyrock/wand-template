@@ -1,0 +1,96 @@
+@import "./tokens.less";
+@import "./mixin.less";
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-main {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo {
+    width: 189px;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+
+  &-user {
+    height:100%;
+    display: flex;
+    align-items: center;
+
+    &-group {
+      display: flex;
+      align-items: center;
+      margin-right:8px;
+      > svg{
+        font-size:@font-size-xs;
+        color: @color-text-3;
+        margin-left:4px;
+      }
+    }
+    &-name {
+      display: flex;
+      align-items: center;
+      margin-right:8px;
+      > svg{
+        font-size:@font-size-xs;
+        color: @color-text-3;
+        margin-left:4px;
+      }
+    }
+
+    &-avatar {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      &-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+  }
+
+
+
+  &-nav {
+    &-main {}
+
+    &-aside {
+      min-width: 560px;
+      height:100%;
+      display: flex;
+      align-items: center;
+
+      &-add {
+        // margin-right:;
+      }
+
+      &-group {
+        display: flex;
+        align-items: center;
+        svg{
+          font-size:@font-size-xs;
+          color: @color-text-3;
+          margin-right:4px;
+        }
+      }
+
+      .admin-link {
+        display: flex;
+        align-items: center;
+        color: @color-text-1;
+      }
+    }
+  }
+}
