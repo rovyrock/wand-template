@@ -1,10 +1,8 @@
 import React from "react";
-import { Card, Row, Col, Button } from "antd";
-const { Meta } = Card;
+import { Button, Card, Row } from "antd";
+
 import { EditOutlined } from '@ant-design/icons';
-import {
-  LockOutlined
-} from "@ant-design/icons";
+
 class App extends React.Component {
 
   render() {

@@ -1,10 +1,8 @@
 import React from "react";
-import { Button, List, Row, Col, Tag, Pagination, Input, Layout, Footer } from "antd";
+import { Button, Col, Input, List, Pagination, Row, Tag } from "antd";
 const { CheckableTag } = Tag;
 const { Search } = Input;
-import PageWrapper from "@/pageWrapper"
 
-import "assets/less/act.less";
 
 import ActItem from "@/act-item";
 const tagsFromServer = [
@@ -72,7 +70,7 @@ class App extends React.Component {
 
     const { selectedTags } = this.state;
     return (
-      <PageWrapper defaultSelectedKeys={["2"]}>
+      <main>
         <div className="act-list">
           <Row justify="space-between" align="middle" className="act-list-hd">
             <Col span={12} className="act-list-hd-main">
@@ -138,7 +136,7 @@ class App extends React.Component {
             </Row>
           </div>
         </div>
-      </PageWrapper>
+      </main>
     );
   }
 }

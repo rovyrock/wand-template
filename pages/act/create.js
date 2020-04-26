@@ -1,8 +1,7 @@
 import React from "react";
-import { Button, List, Row, Col, Tag, Input, Layout, Footer, Form, Select, AutoComplete } from "antd";
+import { AutoComplete, Button, Col,  Form, Input, Row, Select } from "antd";
 const { Option } = Select;
-import PageWrapper from "@/pageWrapper"
-import "assets/less/act.less";
+
 
 const layout = {
   labelCol: { span: 4 },
@@ -14,7 +13,7 @@ const tailLayout = {
 class App extends React.Component {
   render() {
     return (
-      <PageWrapper defaultSelectedKeys={["2"]}>
+      <main>
         <div className="act-create">
           <Row justify="space-between" align="middle" className="act-create-hd">
             <Col span={12}>
@@ -114,7 +113,7 @@ class App extends React.Component {
 
           </div>
         </div>
-      </PageWrapper >
+      </main >
     );
   }
 }

@@ -2,6 +2,6 @@
 import { combineReducers } from 'redux'
 import { SideReducer } from './redux/menu-redux';
 import { TitleReducer } from './redux/title-redux';
-import { ClassNameReducer } from './redux/classname-redux';
+import { PageDataReducer } from './redux/pageData-redux';
 
-export default combineReducers({SideReducer, TitleReducer,ClassNameReducer})
+export default combineReducers({SideReducer, TitleReducer,PageDataReducer})

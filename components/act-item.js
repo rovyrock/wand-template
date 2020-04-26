@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Avatar, Button, Row, Col, Tag } from "antd";
-const { Meta } = Card;
+import { Avatar,Card, Row, Tag } from "antd";
+
 import { ShareAltOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
 
 class App extends React.Component {

@@ -52,12 +52,12 @@ class MyApp extends App {
   
   render () {
 
-    const { Component, pageProps, router, reduxStore,className } = this.props;
-    console.log("_app",this.props)
+    const { Component, pageProps, router, reduxStore } = this.props;
+
     return (
 
 				<Provider store={reduxStore}>
-					<PageLayout className={className} {...pageProps} >
+					<PageLayout {...pageProps} >
 						<Component  {...pageProps} />
 					</PageLayout>
 				</Provider>

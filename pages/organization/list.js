@@ -1,13 +1,11 @@
 import React from "react";
-import { Button, List, Row, Col, Tag, Pagination, Input, Layout, Footer } from "antd";
+import { Button, Col, Input, List, Pagination, Row, Tag } from "antd";
 const { CheckableTag } = Tag;
 const { Search } = Input;
-import PageWrapper from "@/pageWrapper"
+
 import ModalOrganizationApply from "@/modal-organization-apply"
-
-import "assets/less/organization.less";
-
 import OrganizationItem from "@/organization-item";
+
 const tagsFromServer = [
   { value: "all", label: "所有组织" },
   { value: "wegame", label: "WeGame运营部" },
@@ -90,7 +88,7 @@ class App extends React.Component {
 
     const { selectedTags, visible } = this.state;
     return (
-      <PageWrapper>
+      <main>
         <div className="organization-list">
           <Row justify="space-between" align="middle" className="organization-list-hd">
             <Col span={12} className="organization-list-hd-main">
@@ -157,7 +155,7 @@ class App extends React.Component {
           </div>
         </div>
         <ModalOrganizationApply visible={visible} onHandleOk={this.onHandleOk} onHandleCancel={this.onHandleCancel}></ModalOrganizationApply>
-      </PageWrapper>
+      </main>
     );
   }
 }

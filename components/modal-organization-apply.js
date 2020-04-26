@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Row, Col, Checkbox } from "antd";
+import { Checkbox, Col, Modal, Row} from "antd";
 
 const CheckboxGroup = Checkbox.Group;
 const plainOptions = ['所有', 'A项目', 'B项目', 'C项目', 'D项目', 'E项目', 'F项目'];

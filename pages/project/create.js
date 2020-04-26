@@ -1,10 +1,7 @@
 import React from "react";
-import { Button, List, Row, Col, Avatar, Tag, Pagination, Input,Checkbox, Layout, Footer,Upload,message, Modal, Form, Select, AutoComplete } from "antd";
+import { AutoComplete, Avatar, Button, Checkbox, Col, Form,Input,message, Modal, Row,Select,Tag,Upload } from "antd";
 import { PlusOutlined,UploadOutlined } from '@ant-design/icons';
-import PageWrapper from "@/pageWrapper"
 
-import "assets/less/project.less";
-import "assets/less/act.less";
 
 const layout = {
    labelCol: { span: 4 },
@@ -150,7 +147,7 @@ render() {
    const tagChild = detags.map(this.forMap);
    const zrtagChild = zrbase.map(this.forMap);
    return (
-      <PageWrapper defaultSelectedKeys={["1"]}>
+      <main>
         <div className="project-create">
         <Row justify="space-between" align="middle" className="project-create-hd">
           <Col span={12}>
@@ -283,7 +280,7 @@ render() {
               </Form>
             </Row>
         </div>
-      </div></PageWrapper>
+      </div></main>
     );
   }
 }

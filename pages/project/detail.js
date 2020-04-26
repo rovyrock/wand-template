@@ -1,12 +1,9 @@
 import React from "react";
-import { Button, List, Row, Col, Tag, Pagination, Input, Breadcrumb, Descriptions, Avatar } from "antd";
+import { Avatar, Breadcrumb, Button, Col, Descriptions, List, Pagination, Row } from "antd";
 import { FormOutlined } from '@ant-design/icons';
-import ActItem from "@/act-item";
-import PageWrapper from "@/pageWrapper"
-import ModalActCreate from "@/modal-act-create"
 
-import "assets/less/project.less";
-import "assets/less/act.less";
+import ActItem from "@/act-item";
+import ModalActCreate from "@/modal-act-create"
 
 class App extends React.Component {
   state = {
@@ -72,7 +69,7 @@ class App extends React.Component {
     ];
     const { visible } = this.state;
     return (
-      <PageWrapper defaultSelectedKeys={["1"]}>
+      <main>
         <div className="project-detail">
           <Row align="middle">
             <Breadcrumb>
@@ -151,7 +148,7 @@ class App extends React.Component {
 
         </div>
         <ModalActCreate visible={visible} onHandleOk={this.onHandleOk} onHandleCancel={this.onHandleCancel}></ModalActCreate>
-      </PageWrapper>
+      </main>
     );
   }
 }

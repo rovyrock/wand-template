@@ -6,7 +6,7 @@ import NProgress from 'nprogress'
 import { connect } from 'react-redux';
 
 
-import { Layout, Menu, Divider, Avatar, Dropdown, Row, Col } from "antd";
+import { Layout, Menu, Row} from "antd";
 const { Header } = Layout;
 
 import {toggleDispatch, hideDispatch} from '../store/redux/menu-redux'
@@ -38,7 +38,7 @@ class HeaderBar extends Component{
     this.progress();
     const {pathname} = this.props.router;
     const menuPath = ['/project/list', '/act/list'];
-    const {sideShow,defaultSelectedKeys} = this.props;
+    const {defaultSelectedKeys} = this.props;
     return  (
       <Fragment>
         <Head />

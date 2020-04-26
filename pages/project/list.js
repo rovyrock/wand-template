@@ -1,13 +1,9 @@
 import React from "react";
-import { useRouter } from 'next/router'
-import { Button, List, Row, Col, Tag, Pagination, Input } from "antd";
+import { Button, Col, Input, List, Pagination, Row, Tag } from "antd";
 const { CheckableTag } = Tag;
 const { Search } = Input;
-import PageWrapper from "@/pageWrapper"
-import "assets/less/project.less";
 
 import ProjectItem from "@/project-item";
-
 
 const tagsFromServer = [
   { value: "all", label: "所有组织" },
@@ -15,6 +11,7 @@ const tagsFromServer = [
   { value: "design", label: "P&P Design" },
   { value: "1001", label: "1001" },
 ];
+
 
 class App extends React.Component {
   state = {
@@ -74,7 +71,7 @@ class App extends React.Component {
 
     const { selectedTags } = this.state;
     return (
-      <PageWrapper defaultSelectedKeys={["1"]}><div className="project-list">
+      <main><div className="project-list">
         <Row justify="space-between" align="middle" className="project-list-hd">
           <Col span={12} className="project-list-hd-main">
             <h3 className="project-list-title">项目列表</h3>
@@ -90,14 +87,6 @@ class App extends React.Component {
             </Button>
           </Col>
         </Row>
-        {/* <div className="project-list-hd">
-          <h3 className="project-list-title">全部项目</h3>
-          <Button type="primary" onClick={this.createProject}>
-            创建项目
-          </Button>
-
-          
-        </div> */}
         <div className="project-filter">
           <Row justify="start" align="middle" className="project-filter-group">
             <Col span={2}>所属组织：</Col>
@@ -145,7 +134,7 @@ class App extends React.Component {
             <Pagination defaultCurrent={1} total={50} />
           </Row>
         </div>
-      </div></PageWrapper>
+      </div></main>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Button, Row, Col, Form, Input, Select, AutoComplete } from "antd";
+import { AutoComplete, Col, Form, Input, Modal, Row, Select } from "antd";
 const { Option } = Select;
 
 const layout = {
@@ -155,7 +155,7 @@ class App extends React.Component {
           </Form.Item>
 
           <Form.Item {...tailLayout}>
-            <div class="act-create-submit"><button type="submit" class="ant-btn act-create-btn ant-btn-primary"><span>提 交</span></button><button type="button" class="ant-btn act-create-btn"><span>取 消</span></button></div>
+            <div className="act-create-submit"><button type="submit" className="ant-btn act-create-btn ant-btn-primary"><span>提 交</span></button><button type="button" className="ant-btn act-create-btn"><span>取 消</span></button></div>
           </Form.Item>
 
         </Form>
