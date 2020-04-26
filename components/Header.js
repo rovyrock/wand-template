@@ -1,5 +1,5 @@
 import Head from './Head'
-import Link from 'next/link'
+import Link from "./routerLink";
 import React, {Component, Fragment} from 'react'
 import Router, {withRouter} from 'next/router'
 import NProgress from 'nprogress'

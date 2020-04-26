@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Breadcrumb, Button, Col, Descriptions, List, Pagination, Row } from "antd";
 import { FormOutlined } from '@ant-design/icons';
-
+import Link from "@/routerLink";
 import ActItem from "@/act-item";
 import ModalActCreate from "@/modal-act-create"
 
@@ -89,9 +89,9 @@ class App extends React.Component {
               <h4 className="project-detail-subtitle">项目概览</h4>
             </Col>
             <Col>
-              <Button type="link" className="project-detail-edit-button" icon={<FormOutlined />} href="/project/create">
+              <Link href="/project/create"><Button className="project-detail-edit-button" icon={<FormOutlined />}>
                 编辑
-            </Button>
+            </Button></Link>
             </Col>
           </Row>
           <div className="project-overview">
