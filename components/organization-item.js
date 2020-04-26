@@ -3,6 +3,9 @@ import { Button, Card, Row } from "antd";
 
 import { EditOutlined } from '@ant-design/icons';
 
+import getConfig from 'next/config'
+const { linkPrefix } = getConfig().publicRuntimeConfig;
+
 class App extends React.Component {
 
   render() {
@@ -23,7 +26,7 @@ class App extends React.Component {
             }
           </Row>
         ]}
-        cover={<img alt="example" className="organization-item-pic" src="/img/plat-logo.png" />}
+        cover={<img alt="example" className="organization-item-pic" src={`${linkPrefix}/static/plat-logo.png`} />}
       >
         <div className="organization-item-content">
           <h3 className="organization-item-title">P&P design设计中心</h3>
