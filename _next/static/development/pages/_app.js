@@ -282,8 +282,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/layout */ "./node_modules/antd/lib/layout/index.js");
 /* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _Head__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Head */ "./components/Head.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _routerLink__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./routerLink */ "./components/routerLink.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
@@ -413,7 +412,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
           lineNumber: 48,
           columnNumber: 11
         }
-      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+      }, __jsx(_routerLink__WEBPACK_IMPORTED_MODULE_12__["default"], {
         href: "/",
         __self: this,
         __source: {
@@ -463,7 +462,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
           lineNumber: 55,
           columnNumber: 17
         }
-      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+      }, __jsx(_routerLink__WEBPACK_IMPORTED_MODULE_12__["default"], {
         href: "/project/list",
         __self: this,
         __source: {
@@ -487,7 +486,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
           lineNumber: 58,
           columnNumber: 17
         }
-      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+      }, __jsx(_routerLink__WEBPACK_IMPORTED_MODULE_12__["default"], {
         href: "/act/list",
         __self: this,
         __source: {
@@ -669,6 +668,48 @@ PageLayout = Object(next_router__WEBPACK_IMPORTED_MODULE_13__["withRouter"])(_cl
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"])) || _class;
 
 /* harmony default export */ __webpack_exports__["default"] = (PageLayout);
+
+/***/ }),
+
+/***/ "./components/routerLink.js":
+/*!**********************************!*\
+  !*** ./components/routerLink.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NextLink; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/rovyluo/Documents/GitHub/wand-template/components/routerLink.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+// 使用next做路由跳转
+
+
+var linkPrefix = next_config__WEBPACK_IMPORTED_MODULE_2___default()().publicRuntimeConfig.linkPrefix;
+console.log("routerLink", next_config__WEBPACK_IMPORTED_MODULE_2___default()());
+function NextLink(_ref) {
+  var children = _ref.children,
+      href = _ref.href,
+      as = _ref.as;
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: href,
+    as: "".concat(linkPrefix).concat(href),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 10
+    }
+  }, children);
+}
 
 /***/ }),
 
