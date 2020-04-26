@@ -30,9 +30,9 @@ module.exports = withLess({
     modifyVars: themeVariables,
   },
   distDir: 'build',
-  assetPrefix: prod ? '/wand-template' : '',
+  assetPrefix: prod ? '/rebuild/wand-template' : '',
   publicRuntimeConfig: {
-    linkPrefix: prod ? '/wand-template' : ''
+    linkPrefix: prod ? '/rebuild/wand-template' : ''
   },
   // assetPrefix: isProd ? 'http://10.123.5.151/rebuild/wand-template/' : '',
   webpack: (config, {

@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Col, Input, List, Pagination, Row, Tag } from "antd";
 const { CheckableTag } = Tag;
 const { Search } = Input;
-
+import Link from "@/routerLink";
 import ProjectItem from "@/project-item";
 
 const tagsFromServer = [
@@ -82,9 +82,9 @@ class App extends React.Component {
           </Col>
 
           <Col>
-            <Button type="primary" onClick={this.createProject} href="/project/create">
+            <Link href="/project/create"><Button type="primary" onClick={this.createProject}>
               创建项目
-            </Button>
+            </Button></Link>
           </Col>
         </Row>
         <div className="project-filter">
