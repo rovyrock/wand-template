@@ -3,6 +3,8 @@
 import React, {Component} from 'react';
 import ModalOrganizationApply from "@/modal-organization-apply"
 import { Button, Row } from 'antd';
+import getConfig from 'next/config'
+const { linkPrefix } = getConfig().publicRuntimeConfig;
 
 class Index extends Component{
 
@@ -34,7 +36,7 @@ class Index extends Component{
       return(
           <main className="home">
             <Row className="home-brand">
-              <img src="/static/brand.png" className="home-brand-img"></img>
+              <img src={`${linkPrefix}/static/brand.png`} className="home-brand-img"></img>
             </Row>
             <Row >
               <div className="home-intro">

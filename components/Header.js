@@ -4,7 +4,8 @@ import React, {Component, Fragment} from 'react'
 import Router, {withRouter} from 'next/router'
 import NProgress from 'nprogress'
 import { connect } from 'react-redux';
-
+import getConfig from 'next/config'
+const { linkPrefix } = getConfig().publicRuntimeConfig;
 
 import { Layout, Menu, Row} from "antd";
 const { Header } = Layout;
@@ -46,7 +47,7 @@ class HeaderBar extends Component{
         <div className="header-main">
           <div className="header-logo">
               <Link href="/">
-                  <a><img src="/static/logo@2x.png" className="header-logo-img"/></a>
+                  <a><img src={`${linkPrefix}/static/logo@2x.png`} className="header-logo-img"/></a>
               </Link>
           </div>
           <div className="header-nav-main">

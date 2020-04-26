@@ -71,7 +71,6 @@ module.exports = withLess({
       ...config.resolve.alias,
       // your aliases
       'assets': path.resolve(__dirname, 'public/'),
-      'comp': path.resolve(__dirname, 'pages/comp/'),
       '@': path.resolve(__dirname, 'components/'),
     }
     config.plugins.push(
@@ -79,26 +78,6 @@ module.exports = withLess({
         exclude: /mini-css-extract-plugin[^]*Conflicting order between:/,
       })
     );
-
-    // if (!isServer) {
-    //   config.plugins.push(
-    //     new MiniCssExtractPlugin({
-    //       // Options similar to the same options in webpackOptions.output
-    //       // both options are optional
-    //       filename: dev
-    //         ? 'static/css/[name].css'
-    //         : 'static/css/[name].[contenthash:8].css',
-    //       chunkFilename: dev
-    //         ? 'static/css/[name].chunk.css'
-    //         : 'static/css/[name].[contenthash:8].chunk.css',
-    //     ignoreOrder: true,
-    //     })
-    //   )
-    // }
-    // config.stats = {
-    //   // HOTFIX: https://github.com/webpack-contrib/mini-css-extract-plugin/issues/250
-    //   warningsFilter: (warning) => warning.indexOf('Conflicting order between:') > -1,
-    // };
 
     return config
   }

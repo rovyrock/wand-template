@@ -3,6 +3,8 @@ import React, {Component} from 'react'
 import {withRouter} from 'next/router'
 import { connect } from 'react-redux';
 import RouteConf from '../config/route'
+import getConfig from 'next/config'
+const { linkPrefix } = getConfig().publicRuntimeConfig;
 
 @withRouter
 
@@ -27,15 +29,15 @@ class Header extends Component{
     return(
       <Head>
         <title>{currentTitle}</title>
-        <link rel='shortcut icon' type='image/x-icon' href='/static/favicon.ico' />
+        <link rel='shortcut icon' type='image/x-icon' href={`${linkPrefix}/static/favicon.ico`} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         <meta httpEquiv="description" content="魔法棒" className="next-head"/>
         <meta name="Keywords" content="魔法棒，vue，react，nextjs，ssr" className="next-head"/>
         <meta name="Description" content="魔法棒" className="next-head"/>
         <meta name="author" content="魔法棒" className="next-head"/>
-        <link rel="stylesheet" type="text/css" href="/static/css/nprogress.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/markdown.css"/>
-        <link rel="stylesheet" type="text/css" href="/static/css/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href={`${linkPrefix}/static/css/nprogress.css`} />
+        <link rel="stylesheet" type="text/css" href={`${linkPrefix}/static/css/markdown.css`}/>
+        <link rel="stylesheet" type="text/css" href={`${linkPrefix}/static/css/navbar.css`}/>
       </Head>
     )
   }
