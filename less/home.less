@@ -41,16 +41,21 @@
   }
 
   &-ctrls {
-    &-guide {
-      &.@{home-prefix}-ctrls-item {
-        line-height: 44px;
-      }
-    }
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &-item {
       height: 44px;
+      line-height: 44px;
       width: 128px;
       box-shadow: none;
+
+      &.ant-btn {
+        height: 44px;
+        line-height: 44px;
+        width: 128px;
+        padding:0;
+      }
 
       &+.@{home-prefix}-ctrls-item {
         margin-left: 12px;

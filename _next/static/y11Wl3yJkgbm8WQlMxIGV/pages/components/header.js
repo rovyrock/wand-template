@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[38],{UYZk:function(n,w,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/components/header",function(){return o("IkwZ")}])}},[["UYZk",0,2,1,3,4,6,5,9,10,8,7,11,12,13,14,15]]]);
