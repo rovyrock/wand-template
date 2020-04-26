@@ -10979,6 +10979,33 @@ module.exports = (__webpack_require__(/*! dll-reference dll_c2e10d183b950a67d9e7
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/runtime-config.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/runtime-config.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var runtimeConfig;
+
+exports["default"] = function () {
+  return runtimeConfig;
+};
+
+function setConfig(configValue) {
+  runtimeConfig = configValue;
+}
+
+exports.setConfig = setConfig;
+
+/***/ }),
+
 /***/ "./node_modules/omit.js/es/index.js":
 /*!******************************************!*\
   !*** ./node_modules/omit.js/es/index.js ***!
@@ -20391,6 +20418,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _modal_organization_apply__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/modal-organization-apply */ "./components/modal-organization-apply.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -20409,6 +20438,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
+var linkPrefix = next_config__WEBPACK_IMPORTED_MODULE_11___default()().publicRuntimeConfig.linkPrefix;
 
 var Index = /*#__PURE__*/function (_Component) {
   Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Index, _Component);
@@ -20455,7 +20486,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 37,
           columnNumber: 11
         }
       }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -20463,23 +20494,23 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 38,
           columnNumber: 13
         }
       }, __jsx("img", {
-        src: "/static/brand.png",
+        src: "".concat(linkPrefix, "/static/brand.png"),
         className: "home-brand-img",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37,
+          lineNumber: 39,
           columnNumber: 15
         }
       })), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39,
+          lineNumber: 41,
           columnNumber: 13
         }
       }, __jsx("div", {
@@ -20487,7 +20518,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40,
+          lineNumber: 42,
           columnNumber: 15
         }
       }, __jsx("h1", {
@@ -20495,7 +20526,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 43,
           columnNumber: 17
         }
       }, "\u4E00\u7AD9\u5F0F\u8FD0\u8425\u8425\u9500\u7CFB\u7EDF"), __jsx("p", {
@@ -20503,7 +20534,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
+          lineNumber: 44,
           columnNumber: 17
         }
       }, "\u9B54\u6CD5\u68D2\u662F\u53D1\u884C\u5E73\u53F0\u4F53\u7CFB\u4E0B\u4E00\u7AD9\u5F0F\u8FD0\u8425\u5E73\u53F0\u7CFB\u7EDF\u3002\u4EA7\u54C1\uFF0C\u5F00\u53D1\u901A\u8FC7\u7B80\u5355\u914D\u7F6E\uFF0C\u53EF\u89C6\u5316\u62D6\u62FD\u7EC4\u4EF6\u642D\u5EFA\u9875\u9762\uFF0C\u4E00\u952E\u5FEB\u901F\u53D1\u5E03\u5916\u7F51\u3002\u6709\u6548\u51CF\u5C11\u751F\u4EA7\u5468\u671F\uFF0C\u63D0\u5347\u8FD0\u8425\u4EA7\u80FD\u3002\u76EE\u524D\u652F\u6301PC\u7AEF\u4E0E\u79FB\u52A8\u7AEF\u3002"), __jsx("div", {
@@ -20511,7 +20542,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 45,
           columnNumber: 17
         }
       }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -20521,7 +20552,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 46,
           columnNumber: 19
         }
       }, "\u6743\u9650\u7533\u8BF7"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -20530,7 +20561,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 47,
           columnNumber: 19
         }
       }, "\u64CD\u4F5C\u6307\u5F15")))), __jsx(_modal_organization_apply__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -20540,7 +20571,7 @@ var Index = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 51,
           columnNumber: 13
         }
       }));
@@ -20554,7 +20585,7 @@ var Index = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
-/***/ 33:
+/***/ 9:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Frovyluo%2FDocuments%2FGitHub%2Fwand-template%2Fpages%2Findex%2Findex.js ***!
   \***************************************************************************************************************************************************/
@@ -20577,5 +20608,5 @@ module.exports = dll_c2e10d183b950a67d9e7;
 
 /***/ })
 
-},[[33,"static/runtime/webpack.js","styles"]]]);
+},[[9,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

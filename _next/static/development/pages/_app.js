@@ -92,6 +92,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _config_route__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../config/route */ "./config/route.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -113,6 +115,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
+var linkPrefix = next_config__WEBPACK_IMPORTED_MODULE_10___default()().publicRuntimeConfig.linkPrefix;
 var Header = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(function (state) {
   return state.TitleReducer;
 }), Object(next_router__WEBPACK_IMPORTED_MODULE_7__["withRouter"])(_class = _dec(_class = /*#__PURE__*/function (_Component) {
@@ -142,24 +146,24 @@ var Header = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 30,
           columnNumber: 7
         }
       }, __jsx("title", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 31,
           columnNumber: 9
         }
       }, currentTitle), __jsx("link", {
         rel: "shortcut icon",
         type: "image/x-icon",
-        href: "/static/favicon.ico",
+        href: "".concat(linkPrefix, "/static/favicon.ico"),
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 32,
           columnNumber: 9
         }
       }), __jsx("meta", {
@@ -168,7 +172,7 @@ var Header = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31,
+          lineNumber: 33,
           columnNumber: 9
         }
       }), __jsx("meta", {
@@ -178,7 +182,7 @@ var Header = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 34,
           columnNumber: 9
         }
       }), __jsx("meta", {
@@ -188,7 +192,7 @@ var Header = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 35,
           columnNumber: 9
         }
       }), __jsx("meta", {
@@ -198,7 +202,7 @@ var Header = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 36,
           columnNumber: 9
         }
       }), __jsx("meta", {
@@ -208,37 +212,37 @@ var Header = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
-          columnNumber: 9
-        }
-      }), __jsx("link", {
-        rel: "stylesheet",
-        type: "text/css",
-        href: "/static/css/nprogress.css",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36,
-          columnNumber: 9
-        }
-      }), __jsx("link", {
-        rel: "stylesheet",
-        type: "text/css",
-        href: "/static/css/markdown.css",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 37,
           columnNumber: 9
         }
       }), __jsx("link", {
         rel: "stylesheet",
         type: "text/css",
-        href: "/static/css/navbar.css",
+        href: "".concat(linkPrefix, "/static/css/nprogress.css"),
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38,
+          columnNumber: 9
+        }
+      }), __jsx("link", {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "".concat(linkPrefix, "/static/css/markdown.css"),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 9
+        }
+      }), __jsx("link", {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "".concat(linkPrefix, "/static/css/navbar.css"),
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40,
           columnNumber: 9
         }
       }));
@@ -287,7 +291,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! nprogress */ "./node_modules/nprogress/nprogress.js");
 /* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _store_redux_menu_redux__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../store/redux/menu-redux */ "./store/redux/menu-redux.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _store_redux_menu_redux__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../store/redux/menu-redux */ "./store/redux/menu-redux.js");
 
 
 
@@ -316,13 +322,15 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
+var linkPrefix = next_config__WEBPACK_IMPORTED_MODULE_17___default()().publicRuntimeConfig.linkPrefix;
 var Header = antd_lib_layout__WEBPACK_IMPORTED_MODULE_10___default.a.Header;
 
 var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connect"])(function (state) {
   return state.SideReducer;
 }, {
-  toggleDispatch: _store_redux_menu_redux__WEBPACK_IMPORTED_MODULE_17__["toggleDispatch"],
-  hideDispatch: _store_redux_menu_redux__WEBPACK_IMPORTED_MODULE_17__["hideDispatch"]
+  toggleDispatch: _store_redux_menu_redux__WEBPACK_IMPORTED_MODULE_18__["toggleDispatch"],
+  hideDispatch: _store_redux_menu_redux__WEBPACK_IMPORTED_MODULE_18__["hideDispatch"]
 }), Object(next_router__WEBPACK_IMPORTED_MODULE_14__["withRouter"])(_class = _dec(_class = /*#__PURE__*/function (_Component) {
   Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(HeaderBar, _Component);
 
@@ -370,14 +378,14 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43,
+          lineNumber: 44,
           columnNumber: 7
         }
       }, __jsx(_Head__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 45,
           columnNumber: 9
         }
       }), __jsx(Header, {
@@ -386,7 +394,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45,
+          lineNumber: 46,
           columnNumber: 9
         }
       }, __jsx("div", {
@@ -394,7 +402,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
+          lineNumber: 47,
           columnNumber: 9
         }
       }, __jsx("div", {
@@ -402,7 +410,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47,
+          lineNumber: 48,
           columnNumber: 11
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -410,23 +418,23 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48,
+          lineNumber: 49,
           columnNumber: 15
         }
       }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 50,
           columnNumber: 19
         }
       }, __jsx("img", {
-        src: "/static/logo@2x.png",
+        src: "".concat(linkPrefix, "/static/logo@2x.png"),
         className: "header-logo-img",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 50,
           columnNumber: 22
         }
       })))), __jsx("div", {
@@ -434,7 +442,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52,
+          lineNumber: 53,
           columnNumber: 11
         }
       }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -444,7 +452,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53,
+          lineNumber: 54,
           columnNumber: 15
         }
       }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a.Item, {
@@ -452,7 +460,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54,
+          lineNumber: 55,
           columnNumber: 17
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -460,7 +468,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55,
+          lineNumber: 56,
           columnNumber: 19
         }
       }, __jsx("a", {
@@ -468,7 +476,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55,
+          lineNumber: 56,
           columnNumber: 46
         }
       }, "\u9879\u76EE"))), __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a.Item, {
@@ -476,7 +484,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57,
+          lineNumber: 58,
           columnNumber: 17
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -484,7 +492,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58,
+          lineNumber: 59,
           columnNumber: 19
         }
       }, __jsx("a", {
@@ -492,7 +500,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58,
+          lineNumber: 59,
           columnNumber: 42
         }
       }, "\u6D3B\u52A8")))))), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -503,7 +511,7 @@ var HeaderBar = (_dec = Object(react_redux__WEBPACK_IMPORTED_MODULE_16__["connec
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64,
+          lineNumber: 65,
           columnNumber: 9
         }
       })));
@@ -14824,6 +14832,33 @@ function getRouteRegex(normalizedRoute) {
 }
 
 exports.getRouteRegex = getRouteRegex;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/runtime-config.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/runtime-config.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var runtimeConfig;
+
+exports["default"] = function () {
+  return runtimeConfig;
+};
+
+function setConfig(configValue) {
+  runtimeConfig = configValue;
+}
+
+exports.setConfig = setConfig;
 
 /***/ }),
 
